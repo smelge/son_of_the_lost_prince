@@ -1,4 +1,5 @@
 import characters.totallyniceguys.Dwarf;
+import items.WeaponType;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -9,7 +10,7 @@ public class DwarfTest {
 
     @Before
     public void before(){
-        dwarf = new Dwarf("Steve");
+        dwarf = new Dwarf("Steve", WeaponType.Hatchet);
     }
 
     @Test
@@ -30,5 +31,10 @@ public class DwarfTest {
     @Test
     public void hasDefence(){
         assertEquals(13,dwarf.getDefence());
+    }
+
+    @Test
+    public void hasWeapon(){
+        assertEquals(WeaponType.Hatchet, dwarf.getWeapon());
     }
 }

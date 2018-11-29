@@ -1,4 +1,5 @@
 import characters.totallyniceguys.Wizzard;
+import items.SpellType;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -9,7 +10,7 @@ public class WizzardTest {
 
     @Before
     public void before(){
-        wizzard = new Wizzard("Rincewind");
+        wizzard = new Wizzard("Rincewind", SpellType.Currynight);
     }
 
     @Test
@@ -30,5 +31,10 @@ public class WizzardTest {
     @Test
     public void hasDefence(){
         assertEquals(9,wizzard.getDefence());
+    }
+
+    @Test
+    public void hasWeapon(){
+        assertEquals(SpellType.Currynight, wizzard.getSpell());
     }
 }

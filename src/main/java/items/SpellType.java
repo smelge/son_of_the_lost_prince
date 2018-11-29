@@ -3,6 +3,7 @@ package items;
 public enum SpellType {
 
     FireBall(6),
+    Currynight(20),
     FrostRay(5),
     LightningBolt(4),
     PoisonSpray(4),

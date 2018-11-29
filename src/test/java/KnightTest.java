@@ -1,4 +1,5 @@
 import characters.totallyniceguys.Knight;
+import items.WeaponType;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -9,7 +10,7 @@ public class KnightTest {
 
     @Before
     public void before(){
-        knight = new Knight("Sir Peaches");
+        knight = new Knight("Sir Peaches", WeaponType.BroadSword);
     }
 
     @Test
@@ -30,5 +31,10 @@ public class KnightTest {
     @Test
     public void hasDefence(){
         assertEquals(16,knight.getDefence());
+    }
+
+    @Test
+    public void hasWeapon(){
+        assertEquals(WeaponType.BroadSword, knight.getWeapon());
     }
 }
