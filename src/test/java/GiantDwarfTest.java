@@ -1,4 +1,5 @@
 import characters.baddudes.GiantDwarf;
+import items.WeaponType;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -10,7 +11,7 @@ public class GiantDwarfTest {
 
     @Before
     public void before(){
-        giantDwarf = new GiantDwarf("");
+        giantDwarf = new GiantDwarf("", WeaponType.BattleAxe);
     }
 
     @Test
@@ -31,5 +32,10 @@ public class GiantDwarfTest {
     @Test
     public void hasDefence(){
         assertEquals(5,giantDwarf.getDefence());
+    }
+
+    @Test
+    public void hasWeapon(){
+        assertEquals(WeaponType.BattleAxe, giantDwarf.getWeapon());
     }
 }

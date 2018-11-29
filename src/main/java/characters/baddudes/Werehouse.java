@@ -1,10 +1,11 @@
 package characters.baddudes;
 
 import characters.Avatar;
+import items.WeaponType;
 
 public class Werehouse extends Avatar {
 
-    public Werehouse(String name){
+    public Werehouse(String name) {
         super(name);
         setStats();
     }

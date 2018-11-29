@@ -1,5 +1,9 @@
 package characters;
 
+import items.WeaponType;
+
+import java.util.ArrayList;
+
 public abstract class Avatar {
     protected String name;
     protected int hp;
@@ -30,4 +34,6 @@ public abstract class Avatar {
     }
 
     protected abstract void setStats();
+
+
 }

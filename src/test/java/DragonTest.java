@@ -1,4 +1,6 @@
 import characters.baddudes.Dragon;
+import items.SpellType;
+import items.WeaponType;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -9,7 +11,7 @@ public class DragonTest {
 
     @Before
     public void before(){
-        dragon = new Dragon("");
+        dragon = new Dragon("", WeaponType.Claws, SpellType.FireBall);
     }
 
     @Test
@@ -30,5 +32,15 @@ public class DragonTest {
     @Test
     public void hasDefence(){
         assertEquals(2, dragon.getDefence());
+    }
+
+    @Test
+    public void hasWeapon(){
+        assertEquals(WeaponType.Claws, dragon.getWeapon());
+    }
+
+    @Test
+    public void hasSpell(){
+        assertEquals(SpellType.FireBall, dragon.getSpell());
     }
 }

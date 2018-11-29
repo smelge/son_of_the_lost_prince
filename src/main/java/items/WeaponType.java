@@ -9,6 +9,7 @@ public enum WeaponType {
     BroadSword(2),
     GreatSword(4),
     Staff(1),
+    Claws(10),
     LightSabre(100000);
 
     private final int value;

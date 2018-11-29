@@ -7,13 +7,13 @@ import java.util.ArrayList;
 public class Rooms {
 
     private Loot loot;
-    private BadGuys badGuys;
+//    private BadGuys badGuys;
     private boolean status;
 
     public Rooms()
     {
         this.loot = null;
-        this.badGuys = null;
+//        this.badGuys = null;
         this.status  = false;
     }
 
@@ -22,10 +22,10 @@ public class Rooms {
         return this.loot;
     }
 
-    public ArrayList getBadguys()
-    {
-        return BadGuys;
-    }
+//    public ArrayList getBadguys()
+//    {
+//        return BadGuys;
+//    }
 
     public boolean getStatus()
     {
@@ -42,10 +42,10 @@ public class Rooms {
         this.loot = loot;
     }
 
-    public void setBadGuys(BadGuys badguys)
-    {
-        this.badGuys = badguys;
-    }
+//    public void setBadGuys(BadGuys badguys)
+//    {
+//        this.badGuys = badguys;
+//    }
 
 
 

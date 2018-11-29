@@ -1,4 +1,5 @@
 import characters.baddudes.MsWhitby;
+import items.WeaponType;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -9,7 +10,7 @@ public class MsWhitbyTest {
 
     @Before
     public void before(){
-        msWhitby = new MsWhitby("");
+        msWhitby = new MsWhitby("", WeaponType.Claws);
     }
 
     @Test
@@ -30,5 +31,10 @@ public class MsWhitbyTest {
     @Test
     public void hasDefence(){
         assertEquals(20,msWhitby.getDefence());
+    }
+
+    @Test
+    public void hasWeapon(){
+        assertEquals(WeaponType.Claws, msWhitby.getWeapon());
     }
 }

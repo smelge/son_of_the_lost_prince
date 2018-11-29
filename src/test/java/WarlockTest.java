@@ -1,4 +1,5 @@
 import characters.totallyniceguys.Warlock;
+import items.SpellType;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -9,7 +10,7 @@ public class WarlockTest {
 
     @Before
     public void before(){
-        warlock = new Warlock("Sharon the Sparkly");
+        warlock = new Warlock("Sharon the Sparkly", SpellType.FrostRay);
     }
 
     @Test
@@ -30,5 +31,10 @@ public class WarlockTest {
     @Test
     public void hasDefence(){
         assertEquals(9,warlock.getDefence());
+    }
+
+    @Test
+    public void hasWeapon(){
+        assertEquals(SpellType.FrostRay, warlock.getSpell());
     }
 }

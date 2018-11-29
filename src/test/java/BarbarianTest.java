@@ -1,4 +1,5 @@
 import characters.totallyniceguys.Barbarian;
+import items.WeaponType;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -9,7 +10,7 @@ public class BarbarianTest {
 
     @Before
     public void before(){
-        barbarian = new Barbarian("Kronk");
+        barbarian = new Barbarian("Kronk", WeaponType.BattleAxe);
     }
 
     @Test
@@ -30,5 +31,10 @@ public class BarbarianTest {
     @Test
     public void hasDefence(){
         assertEquals(8,barbarian.getDefence());
+    }
+
+    @Test
+    public void hasWeapon(){
+        assertEquals(WeaponType.BattleAxe, barbarian.getWeapon());
     }
 }

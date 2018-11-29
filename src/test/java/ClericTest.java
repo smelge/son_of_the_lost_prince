@@ -1,4 +1,5 @@
 import characters.totallyniceguys.Cleric;
+import items.SpellType;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -9,7 +10,7 @@ public class ClericTest {
 
     @Before
     public void before(){
-        cleric = new Cleric("Dr Killinger");
+        cleric = new Cleric("Dr Killinger", SpellType.HealingLight);
     }
 
     @Test
@@ -30,5 +31,10 @@ public class ClericTest {
     @Test
     public void hasDefence(){
         assertEquals(9,cleric.getDefence());
+    }
+
+    @Test
+    public void hasSpell(){
+        assertEquals(SpellType.HealingLight, cleric.getSpell());
     }
 }
