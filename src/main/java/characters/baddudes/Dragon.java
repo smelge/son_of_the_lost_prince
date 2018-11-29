@@ -1,10 +1,11 @@
 package characters.baddudes;
 
+import behaviours.IBadGuy;
 import characters.Avatar;
 import items.SpellType;
 import items.WeaponType;
 
-public class Dragon extends Avatar {
+public class Dragon extends Avatar  {
     private SpellType spell;
     private WeaponType weapon;
 
@@ -37,4 +38,9 @@ public class Dragon extends Avatar {
     public WeaponType getWeapon() {
         return weapon;
     }
+
+//    public void attack(){
+//        getWeapon();
+//
+//    }
 }
