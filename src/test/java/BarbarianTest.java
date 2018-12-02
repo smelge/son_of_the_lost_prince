@@ -25,7 +25,7 @@ public class BarbarianTest {
 
     @Test
     public void hasAttack(){
-        assertEquals(15,barbarian.getAttack());
+        assertEquals(19,barbarian.getAttack());
     }
 
     @Test
@@ -36,5 +36,11 @@ public class BarbarianTest {
     @Test
     public void hasWeapon(){
         assertEquals(WeaponType.BattleAxe, barbarian.getWeapon());
+    }
+
+    @Test
+    public void canChangeWeapon(){
+        barbarian.setWeapon(WeaponType.Hatchet);
+        assertEquals(WeaponType.Hatchet,barbarian.getWeapon());
     }
 }

@@ -15,7 +15,9 @@ public class Barbarian extends Avatar {
     protected void setStats(){
         this.hp += 50;
         this.attack += 5;
+        this.attack += this.weapon.getValue();
         this.defence -= 2;
+
     }
 
     public WeaponType getWeapon(){
@@ -25,4 +27,6 @@ public class Barbarian extends Avatar {
     public void setWeapon(WeaponType weapon) {
         this.weapon = weapon;
     }
+
+
 }

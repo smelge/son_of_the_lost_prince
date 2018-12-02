@@ -2,6 +2,7 @@ package items;
 
 public enum Loot {
 
+    FRIENDSHIP(0),
     GEM(50),
     GOLD(10),
     DIAMOND(100),
