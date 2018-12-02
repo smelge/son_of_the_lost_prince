@@ -10,7 +10,7 @@ public class ClericTest {
 
     @Before
     public void before(){
-        cleric = new Cleric("Dr Killinger", SpellType.HealingLight);
+        cleric = new Cleric("Dr Killinger");
     }
 
     @Test
@@ -25,7 +25,7 @@ public class ClericTest {
 
     @Test
     public void hasAttack(){
-        assertEquals(8,cleric.getAttack());
+        assertEquals(9,cleric.getAttack());
     }
 
     @Test

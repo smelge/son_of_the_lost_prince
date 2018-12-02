@@ -11,7 +11,7 @@ public class DragonTest {
 
     @Before
     public void before(){
-        dragon = new Dragon("", WeaponType.Claws, SpellType.FireBall);
+        dragon = new Dragon("");
     }
 
     @Test
@@ -26,7 +26,7 @@ public class DragonTest {
 
     @Test
     public void hasAttack(){
-        assertEquals(5,dragon.getAttack());
+        assertEquals(15,dragon.getAttack());
     }
 
     @Test

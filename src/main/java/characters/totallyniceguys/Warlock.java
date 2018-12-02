@@ -7,16 +7,15 @@ import items.WeaponType;
 public class Warlock extends Avatar {
 
     private SpellType spell;
+    private WeaponType weapon;
 
-    public Warlock(String name, SpellType spell) {
+    public Warlock(String name) {
         super(name);
-        this.spell = spell;
-        setStats();
-    }
-
-    protected void setStats() {
+        this.spell = SpellType.FrostRay;
+        this.weapon = WeaponType.Dagger;
         this.hp -= 10;
         this.attack += 0;
+        this.attack += this.weapon.getValue();
         this.defence -= 1;
     }
 

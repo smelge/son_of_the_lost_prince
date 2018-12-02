@@ -1,4 +1,5 @@
 import characters.baddudes.Werehouse;
+import items.WeaponType;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -24,11 +25,16 @@ public class WerehouseTest {
 
     @Test
     public void hasAttack(){
-        assertEquals(0,werehouse.getAttack());
+        assertEquals(1,werehouse.getAttack());
     }
 
     @Test
     public void hasDefence(){
         assertEquals(0,werehouse.getDefence());
+    }
+
+    @Test
+    public void hasWeapon(){
+        assertEquals(WeaponType.Splinters, werehouse.getWeapon());
     }
 }

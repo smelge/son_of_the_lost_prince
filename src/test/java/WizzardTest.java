@@ -10,7 +10,7 @@ public class WizzardTest {
 
     @Before
     public void before(){
-        wizzard = new Wizzard("Rincewind", SpellType.Currynight);
+        wizzard = new Wizzard("Rincewind");
     }
 
     @Test
@@ -25,7 +25,7 @@ public class WizzardTest {
 
     @Test
     public void hasAttack(){
-        assertEquals(12,wizzard.getAttack());
+        assertEquals(13,wizzard.getAttack());
     }
 
     @Test

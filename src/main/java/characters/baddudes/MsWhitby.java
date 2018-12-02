@@ -7,16 +7,13 @@ public class MsWhitby extends Avatar {
 
     private WeaponType weapon;
 
-    public MsWhitby(String name, WeaponType weapon) {
+    public MsWhitby(String name) {
         super(name);
-        this.weapon = weapon;
-        setStats();
-    }
-
-    protected void setStats(){
+        this.weapon = WeaponType.KnittingNeedles;
         this.name = "Ms Whitby. A nonagenarian murder powerhouse.";
         this.hp -= 50;
         this.attack += 10;
+        this.attack += this.weapon.getValue();
         this.defence += 10;
     }
 

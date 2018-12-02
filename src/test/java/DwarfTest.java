@@ -10,7 +10,7 @@ public class DwarfTest {
 
     @Before
     public void before(){
-        dwarf = new Dwarf("Steve", WeaponType.Hatchet);
+        dwarf = new Dwarf("Steve");
     }
 
     @Test
@@ -25,7 +25,7 @@ public class DwarfTest {
 
     @Test
     public void hasAttack(){
-        assertEquals(12,dwarf.getAttack());
+        assertEquals(14,dwarf.getAttack());
     }
 
     @Test

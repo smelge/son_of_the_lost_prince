@@ -10,7 +10,7 @@ public class KnightTest {
 
     @Before
     public void before(){
-        knight = new Knight("Sir Peaches", WeaponType.BroadSword);
+        knight = new Knight("Sir Peaches");
     }
 
     @Test
@@ -25,7 +25,7 @@ public class KnightTest {
 
     @Test
     public void hasAttack(){
-        assertEquals(12,knight.getAttack());
+        assertEquals(15,knight.getAttack());
     }
 
     @Test

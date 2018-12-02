@@ -10,7 +10,7 @@ public class WarlockTest {
 
     @Before
     public void before(){
-        warlock = new Warlock("Sharon the Sparkly", SpellType.FrostRay);
+        warlock = new Warlock("Sharon the Sparkly");
     }
 
     @Test
@@ -25,7 +25,7 @@ public class WarlockTest {
 
     @Test
     public void hasAttack(){
-        assertEquals(10,warlock.getAttack());
+        assertEquals(12,warlock.getAttack());
     }
 
     @Test

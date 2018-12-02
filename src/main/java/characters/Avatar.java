@@ -38,8 +38,4 @@ public abstract class Avatar {
     public int getLoot() {
         return loot;
     }
-
-    protected abstract void setStats();
-
-
 }

@@ -9,17 +9,14 @@ public class Dragon extends Avatar  {
     private SpellType spell;
     private WeaponType weapon;
 
-    public Dragon(String name, WeaponType weapon, SpellType spell) {
+    public Dragon(String name) {
         super(name);
-        this.weapon = weapon;
-        this.spell = spell;
-        setStats();
-    }
-
-    protected void setStats(){
+        this.weapon = WeaponType.Claws;
+        this.spell = SpellType.FireBall;
         this.name = "Adorable baby dragon";
         this.hp -= 90;
         this.attack -= 5;
+        this.attack += this.weapon.getValue();
         this.defence -= 8;
     }
 

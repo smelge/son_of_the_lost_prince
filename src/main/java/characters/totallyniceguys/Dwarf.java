@@ -7,15 +7,12 @@ public class Dwarf extends Avatar {
 
     private WeaponType weapon;
 
-    public Dwarf(String name, WeaponType weapon) {
+    public Dwarf(String name) {
         super(name);
-        this.weapon = weapon;
-        setStats();
-    }
-
-    protected void setStats(){
+        this.weapon = WeaponType.Hatchet;
         this.hp -= 10;
         this.attack += 2;
+        this.attack += this.weapon.getValue();
         this.defence += 3;
     }
 

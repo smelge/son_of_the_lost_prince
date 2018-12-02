@@ -10,7 +10,7 @@ public class MsWhitbyTest {
 
     @Before
     public void before(){
-        msWhitby = new MsWhitby("", WeaponType.Claws);
+        msWhitby = new MsWhitby("");
     }
 
     @Test
@@ -25,7 +25,7 @@ public class MsWhitbyTest {
 
     @Test
     public void hasAttack(){
-        assertEquals(20,msWhitby.getAttack());
+        assertEquals(25,msWhitby.getAttack());
     }
 
     @Test
@@ -35,6 +35,6 @@ public class MsWhitbyTest {
 
     @Test
     public void hasWeapon(){
-        assertEquals(WeaponType.Claws, msWhitby.getWeapon());
+        assertEquals(WeaponType.KnittingNeedles, msWhitby.getWeapon());
     }
 }

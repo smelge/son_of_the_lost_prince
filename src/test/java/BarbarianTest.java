@@ -10,7 +10,7 @@ public class BarbarianTest {
 
     @Before
     public void before(){
-        barbarian = new Barbarian("Kronk", WeaponType.BattleAxe);
+        barbarian = new Barbarian("Kronk");
     }
 
     @Test

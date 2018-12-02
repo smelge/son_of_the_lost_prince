@@ -11,7 +11,7 @@ public class GiantDwarfTest {
 
     @Before
     public void before(){
-        giantDwarf = new GiantDwarf("", WeaponType.BattleAxe);
+        giantDwarf = new GiantDwarf("");
     }
 
     @Test
@@ -26,7 +26,7 @@ public class GiantDwarfTest {
 
     @Test
     public void hasAttack(){
-        assertEquals(13,giantDwarf.getAttack());
+        assertEquals(17,giantDwarf.getAttack());
     }
 
     @Test
