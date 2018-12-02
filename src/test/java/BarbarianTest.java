@@ -1,3 +1,4 @@
+import characters.baddudes.Dragon;
 import characters.totallyniceguys.Barbarian;
 import items.WeaponType;
 import org.junit.Before;
@@ -7,10 +8,12 @@ import static org.junit.Assert.assertEquals;
 
 public class BarbarianTest {
     Barbarian barbarian;
+    Dragon enemy;
 
     @Before
     public void before(){
         barbarian = new Barbarian("Kronk");
+        enemy = new Dragon("");
     }
 
     @Test
@@ -42,5 +45,10 @@ public class BarbarianTest {
     public void canChangeWeapon(){
         barbarian.setWeapon(WeaponType.Hatchet);
         assertEquals(WeaponType.Hatchet,barbarian.getWeapon());
+    }
+
+    @Test
+    public void canAttackDragon(){
+        assertEquals(0,barbarian.attack(enemy));
     }
 }
